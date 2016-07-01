@@ -1,0 +1,40 @@
+{
+  "name": "gusto",
+  "version": "1.0.0",
+  "description": "Test job for KONTORA",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-mqpacker": "^3.0.1",
+    "grunt-csso": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^1.2.0",
+    "load-grunt-tasks": "^3.5.0"
+  },
+  "scripts": {
+    "build": "grunt build",
+    "start": "npm run build && grunt serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vimble/gusto.git"
+  },
+  "author": "Alex Demianiuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vimble/gusto/issues"
+  },
+  "homepage": "https://github.com/vimble/gusto#readme"
+}
