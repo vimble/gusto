@@ -3,18 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <title>Gusto</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-    <div class="main-header__logo">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="39" height="33" viewBox="0 0 39 33">
-        <path d="M19.501,33.000 L39.000,0.000 L0.001,0.000 L19.501,33.000 Z" fill="#ffffff"/>
-        <path d="M12.000,20.000 L24.000,0.000 L0.001,0.000 L12.000,20.000 Z" fill="#a6a7b0"/>
-        <path d="M12.000,20.000 L24.000,0.000 L0.001,0.000 L12.000,20.000 Z" fill="#cacacc"/>
-      </svg>
+    <div class="wrapper  wrapper--header">
+      <div class="row  row--header">
+        <div class="logo">
+          <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="39" height="33" viewBox="0 0 39 33">
+            <svg y="13" fill="#a6a7b0" width="24" height="20" id="svg1">
+              <path d="M12.000,20.000 L24.000,0.000 L0.001,0.000 L12.000,20.000 Z">
+            </svg>
+            <svg x="15" y="13" fill="#cacacc" width="24" height="20" id="svg2">
+              <path d="M12.000,20.000 L24.000,0.000 L0.001,0.000 L12.000,20.000 Z">
+            </svg>
+            <svg fill="#ffffff" id="svg3">
+              <path d="M19.501,33.000 L39.000,0.000 L0.001,0.000 L19.501,33.000 Z">
+            </svg>
+          </svg>
+          <h1 class="logo__name"><span class="logo__textcolor">Gus</span>to</h1>
+        </div>
+        <div class="main-header__title">
+          Having Trouble Viewing it?
+          <a class="main-header__link" href="#">View Online</a>.
+        </div>
+      </div>
     </div>
-    <div class="main-header__title">hello world</div>
   </header>
+  <main class="content">
+    <div class="wrapper">
+      <div class="row">
+        <section class="promo">
+          <img class="promo__img" src="img/tmp/img1.jpg" alt="Larger Item Heading">
+          <h2 class="promo__title">Larger Item Heading</h2>
+          <p class="promo__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi.</p>
+          <a class="promo__btn btn" href="#">Details</a>
+        </section>
+        <div class="promo-small">
+          <article class="small-item">
+            <img class="small-item__img" src="img/tmp/img2.jpg" alt="Small item">
+            <h3 class="small-item__title">Small item</h3>
+            <p class="small-item__desc">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+            <a class="small-item__btn btn" href="#">Details</a>
+          </article>
+          <article class="small-item">
+            <img class="small-item__img" src="img/tmp/img3.jpg" alt="Small item" >
+            <h3 class="small-item__title">Small item</h3>
+            <p class="small-item__desc">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</p>
+            <a class="small-item__btn btn" href="#">Details</a>
+          </article>
+        </div>
+        <div class="position">
+          <div class="position__choose">
+            <form class="position__form" action="#" method="post">
+              <div class="position__select-wrapper">
+                <select class="position__select" name="position" id="position">
+                  <option value="none" selected>Выбирите позицию</option>
+                  <option value="position1">Позиция 1</option>
+                  <option value="position2">Позиция 2</option>
+                  <option value="position3">Позиция 3</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="position__info">
+            <b class="position__text-title">Позиция 1.</b>
+            <p class="position__text">
+              Данный текстовый блок, появляется после того как пользователь выбрал соответствующую Позицую слева. Он должен меняться при выборе Позиции 2, 3 и 4. Пока Позиция неактивная, здесь должно быть пусто.
+            </p>
+          </div>
+        </div>
+        <div class="blog">
+          <article class="blog-post">
+            <h3 class="blog-post__title">Blog Post Title One</h3>
+            <p class="blog-post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi.</p>
+            <a class="blog-post__btn btn" href="#">Details</a>
+          </article>
+          <article class="blog-post">
+            <h3 class="blog-post__title">Blog Post Title Two</h3>
+            <p class="blog-post__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis lectus at arcu egestas fringilla fermentum eget ipsum. Vestibulum hendrerit dignissim nunc vel volutpat. Nulla facilisi.</p>
+            <a class="blog-post__btn btn" href="#">Details</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="main-footer">
+    <div class="wrapper  wrapper--socials">
+      <div class="row row--socials">
+        <div class="socials">
+          <b class="socials__title">Stay Connected</b>
+          <a class="socials__link  socials__link--twitter" href="#">in Twitter</a>
+          <a class="socials__link  socials__link--facebook" href="#">in Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper  wrapper--footer">
+      <div class="row row--footer">
+        <div class="info">
+          <p class="info__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo est id nulla luctus, quis posuere metus elementum. Phasellus elementum tortor nec massa pellentesque lobortis.
+          </p>
+          <ul class="info__items">
+            <li class="info__item">
+              <a class="info__link" href="#">Quick Link One</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">Quick Link Two</a>
+            </li>
+            <li class="info__item">
+              <a class="info__link" href="#">Quick Link Three</a>
+              </li>
+            <li class="info__item">
+              <a class="info__link" href="#">Quick Link Four</a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <div class="copyright__container">
+            <p class="copyright__text">Copyright 2013 <a class="copyright__link" href="#">Gusto</a>. All Rights Reserved.</p>
+          </div>
+          <div class="copyright__subcribe">
+            <a class="copyright__subscribe-link" href="#">View Online</a>
+            <a class="copyright__subscribe-link" href="#">Unsubscribe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>

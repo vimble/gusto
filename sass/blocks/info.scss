@@ -1,0 +1,47 @@
+.info {
+  display: inline-block;
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 27px;
+  vertical-align: top;
+  border-bottom: 1px solid #a6a7b0;
+
+  @media #{$mobile-width} {
+    text-align: center;
+  }
+}
+
+.info__desc {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  padding: 0;
+  margin: 0;
+  margin-right: 68px;
+  text-align: left;
+  line-height: 24px;
+  vertical-align: top;
+
+  @media #{$mobile-width} {
+    margin-bottom: 30px;
+  }
+}
+
+.info__items {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style-image: url("../img/bullet.svg");
+  vertical-align: top;
+}
+
+.info__link {
+  line-height: 24px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

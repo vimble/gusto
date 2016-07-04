@@ -1,4 +1,63 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helveticaneue-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/helveticaneue-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
+  font-family: $helvetica;
+  font-size: 14px;
+  line-height: 20px;
+  color: $body-color;
   background-color: $body-bgcolor;
-  color: green;
+
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  &--header,
+  &--footer {
+    background-color: #53545e;
+  }
+  &--socials {
+    background-color: #f1f1f1;
+  }
+
+  @media #{$mobile-width} {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.row {
+  padding: 0 30px;
+
+  &--header {
+    min-height: 100px;
+    padding: 34px 30px;
+    box-sizing: border-box;
+  }
+  &--footer {
+    color: white;
+  }
+  &--socials {
+    min-height: 65px;
+    box-sizing: border-box;
+  }
 }

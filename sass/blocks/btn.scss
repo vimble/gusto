@@ -1,0 +1,18 @@
+.btn {
+  display: block;
+  padding: 6px 12px;
+  font-family: $open-sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #53545e;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in;
+  &:hover {
+    opacity: 0.7;
+  }
+}

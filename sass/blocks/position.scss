@@ -1,0 +1,80 @@
+.position {
+  padding-bottom: 50px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eaeaea;
+  @include clearfix();
+}
+
+.position__choose {
+  float: left;
+  width: 100%;
+  max-width: 285px;
+
+  @media #{$mobile-width} {
+    max-width: 100%;
+  }
+}
+
+.position__select-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 191px;
+  background: url("../img/arrdown.svg") no-repeat 96.5% 10px;
+  background-color: #dedede;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 30px;
+    top: 0;
+    height: 30px;
+    width: 1px;
+    background-color: white;
+  }
+
+  @media #{$mobile-width} {
+    max-width: 100%;
+    margin-bottom: 30px;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.position__select {
+  width: 100%;
+  padding: 5px 0;
+  padding-left: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #53545e;
+  background-color: transparent;
+  background-image: none;
+  border: 0;
+  box-shadow: none;
+  appearance: none;
+  outline: 0;
+}
+
+.position__info {
+  float: right;
+  width: 255px;
+
+  @media #{$mobile-width} {
+    float: none;
+    width: 100%;
+  }
+}
+
+.position__text-title {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: #53545e;
+}
+
+.position__text {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
